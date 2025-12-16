@@ -63,7 +63,7 @@
 					<div class="col-lg-3">
 						<div class="logo">
 							<a href="{{ url('/') }}">
-								<img src="{{ $gtext['front_logo'] ? asset('public/media/'.$gtext['front_logo']) : asset('public/frontend/images/logo.png') }}" alt="logo">
+								<img src="{{ $gtext['front_logo'] ? asset('media/'.$gtext['front_logo']) : asset('frontend/images/logo.png') }}" alt="logo">
 							</a>
 						</div>
 						<div class="icon-bars-card">

@@ -4,7 +4,7 @@
 	<section class="hero-section">
 		@foreach ($slider as $row)
 		@php $aRow = json_decode($row->desc); @endphp
-		<div class="hero-screen hero-overlay" style="background-image: url({{ $row->image ? asset('public/media/'.$row->image) : '' }});">
+		<div class="hero-screen hero-overlay" style="background-image: url({{ $row->image ? asset('media/'.$row->image) : '' }});">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
@@ -68,7 +68,7 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="about-img">
-								<img src="{{ asset('public/media/'.$row->image) }}" alt="{{ $row->title }}">
+								<img src="{{ asset('media/'.$row->image) }}" alt="{{ $row->title }}">
 							</div>
 						</div>
 					</div>
@@ -78,14 +78,14 @@
 						@if($aRow->image2 != '')
 						<div class="col-12 col-md-6">
 							<div class="about-img">
-								<img src="{{ asset('public/media/'.$aRow->image2) }}" alt="{{ $row->title }}">
+								<img src="{{ asset('media/'.$aRow->image2) }}" alt="{{ $row->title }}">
 							</div>
 						</div>
 						@endif
 						@if($aRow->image3 != '')
 						<div class="col-12 col-md-6">
 							<div class="about-img">
-								<img src="{{ asset('public/media/'.$aRow->image3) }}" alt="{{ $row->title }}">
+								<img src="{{ asset('media/'.$aRow->image3) }}" alt="{{ $row->title }}">
 							</div>
 						</div>
 						@endif
@@ -191,7 +191,7 @@
 				<div class="col-lg-4">
 					<div class="offer-card">
 						<div class="offer-image">
-							<img src="{{ asset('public/media/'.$row->image) }}" alt="{{ $row->title }}" />
+							<img src="{{ asset('media/'.$row->image) }}" alt="{{ $row->title }}" />
 						</div>
 						<div class="offer-content">
 							<h2>{{ $row->title }}</h2>
@@ -233,7 +233,7 @@
 					<div class="item-card">
 						<div class="item-image">
 							<a href="{{ route('frontend.room', [$row->id, $row->slug]) }}">
-								<img src="{{ asset('public/media/'.$row->thumbnail) }}" alt="{{ $row->title }}" />
+								<img src="{{ asset('media/'.$row->thumbnail) }}" alt="{{ $row->title }}" />
 							</a>
 							@if(($row->is_discount == 1) && ($row->old_price !=''))
 								@php 
@@ -298,7 +298,7 @@
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="service-card">
 						<div class="service-icon">
-							<img src="{{ asset('public/media/'.$row->image) }}" alt="{{ $row->title }}" />
+							<img src="{{ asset('media/'.$row->image) }}" alt="{{ $row->title }}" />
 						</div>
 						<h4>{{ $row->title }}</h4>
 						<p>{{ $row->desc }}</p>
@@ -317,7 +317,7 @@
 		<div class="row align-items-center justify-content-center g-0">
 			<div class="col-12 col-md-12 col-lg-12 col-xl-6">
 				<div class="preview-video">
-					<img src="{{ asset('public/media/'.$home_video['image']) }}" alt="{{ $home_video['title'] }}">
+					<img src="{{ asset('media/'.$home_video['image']) }}" alt="{{ $home_video['title'] }}">
 					<div class="video-card">
 						<a href="{{ $home_video['video_url'] }}" class="play-icon popup-video">
 							<i class="bi bi-play-fill"></i>
@@ -361,7 +361,7 @@
 					<div class="testimonial-card">
 						<div class="client">
 							<div class="img-card">
-								<img src="{{ asset('public/media/'.$row->image) }}" alt="{{ $row->title }}" />
+								<img src="{{ asset('media/'.$row->image) }}" alt="{{ $row->title }}" />
 							</div>
 							<div class="client-info">
 								<h4>{{ $row->title }}</h4>
@@ -400,7 +400,7 @@
 					<div class="blog-card">
 						<div class="blog-img">
 							<a href="{{ route('frontend.article', [$row->id, $row->slug]) }}">
-								<img src="{{ asset('public/media/'.$row->thumbnail) }}" alt="{{ $row->title }}" />
+								<img src="{{ asset('media/'.$row->thumbnail) }}" alt="{{ $row->title }}" />
 							</a>
 						</div>
 						<div class="blog-content">

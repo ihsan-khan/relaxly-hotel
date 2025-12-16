@@ -20,9 +20,9 @@
 				<td class="text-left">{{ $row->page_type }}</td> 
 				<td class="text-left">{{ $row->url }}</td> 
 				@if ($row->image != '')
-				<td class="text-center"><div class="table_col_image"><img src="{{ asset('public') }}/media/{{ $row->image }}" /></div></td>
+				<td class="text-center"><div class="table_col_image"><img src="{{ asset('media') }}/{{ $row->image }}" /></div></td>
 				@else
-				<td class="text-center"><div class="table_col_image"><img src="{{ asset('public') }}/backend/images/album_icon.png" /></div></td>
+				<td class="text-center"><div class="table_col_image"><img src="{{ asset('backend/images/album_icon.png') }}" /></div></td>
 				@endif
 				
 				@if ($row->is_publish == 1)

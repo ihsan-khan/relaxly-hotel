@@ -28,7 +28,7 @@
 								<div class="col-lg-3 mb-30">
 									<div class="theme-view-card">
 										<div class="theme-image">
-											<img src="{{asset('public/backend/images/home-1.jpg')}}" />
+											<img src="{{asset('backend/images/home-1.jpg')}}" />
 										</div>
 										<div class="theme-footer">
 											<div class="theme-title">Home Page 1</div>
@@ -39,7 +39,7 @@
 								<div class="col-lg-3 mb-30">
 									<div class="theme-view-card dnone">
 										<div class="theme-image">
-											<img src="{{asset('public/backend/images/home-2.jpg')}}" />
+											<img src="{{asset('backend/images/home-2.jpg')}}" />
 										</div>
 										<div class="theme-footer">
 											<div class="theme-title">Home Page 2</div>
@@ -51,7 +51,7 @@
 								<div class="col-lg-3 mb-30">
 									<div class="theme-view-card dnone">
 										<div class="theme-image">
-											<img src="{{asset('public/backend/images/home-3.jpg')}}" />
+											<img src="{{asset('backend/images/home-3.jpg')}}" />
 										</div>
 										<div class="theme-footer">
 											<div class="theme-title">Home Page 3</div>
@@ -62,7 +62,7 @@
 								<div class="col-lg-3 mb-30">
 									<div class="theme-view-card dnone">
 										<div class="theme-image">
-											<img src="{{asset('public/backend/images/home-4.jpg')}}" />
+											<img src="{{asset('backend/images/home-4.jpg')}}" />
 										</div>
 										<div class="theme-footer">
 											<div class="theme-title">Home Page 4</div>

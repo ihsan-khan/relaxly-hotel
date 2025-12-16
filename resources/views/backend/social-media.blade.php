@@ -127,7 +127,7 @@
 
 @push('scripts')
 <!-- css/js -->
-<link rel="stylesheet" href="{{asset('public/backend/css/bootstrap-icons.css')}}">
+<link rel="stylesheet" href="{{asset('backend/css/bootstrap-icons.css')}}">
 <!-- css/js -->
 <script type="text/javascript">
 var TEXT = [];

@@ -16,9 +16,9 @@
 				<td class="checkboxlist text-center"><input name="item_ids[]" value="{{ $row->id }}" class="tp-checkbox selected_item" type="checkbox"></td> 
 				<td class="text-left">{{ $row->title }}</td> 
 				@if ($row->image != '')
-				<td class="text-center"><div class="table_col_image"><img src="{{ asset('public') }}/media/{{ $row->image }}" /></div></td>
+				<td class="text-center"><div class="table_col_image"><img src="{{ asset('media') }}/{{ $row->image }}" /></div></td>
 				@else
-				<td class="text-center"><div class="table_col_image"><img src="{{ asset('public') }}/backend/images/album_icon.png" /></div></td>
+				<td class="text-center"><div class="table_col_image"><img src="{{ asset('backend/images/album_icon.png') }}" /></div></td>
 				@endif
 				
 				@if ($row->is_publish == 1)

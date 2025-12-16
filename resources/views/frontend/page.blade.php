@@ -11,7 +11,7 @@
 	<meta property="og:description" content="{{ $gtext['og_description'] }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ url()->current() }}" />
-	<meta property="og:image" content="{{ asset('public/media/'.$gtext['og_image']) }}" />
+	<meta property="og:image" content="{{ asset('media/'.$gtext['og_image']) }}" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($gtext['fb_publish'] == 1)
@@ -25,7 +25,7 @@
 	<meta name="twitter:url" content="{{ url()->current() }}">
 	<meta name="twitter:title" content="{{ $gtext['og_title'] }}">
 	<meta name="twitter:description" content="{{ $gtext['og_description'] }}">
-	<meta name="twitter:image" content="{{ asset('public/media/'.$gtext['og_image']) }}">
+	<meta name="twitter:image" content="{{ asset('media/'.$gtext['og_image']) }}">
 @endsection
 
 @section('header')
@@ -35,7 +35,7 @@
 @section('content')
 <main class="main">
 	<!-- Page Breadcrumb -->
-	<section class="breadcrumb-section" style="background-image: url({{ $data['thumbnail'] ? asset('public/media/'.$data['thumbnail']) : asset('public/frontend/images/breadcrumb_bg.jpg') }});">
+	<section class="breadcrumb-section" style="background-image: url({{ $data['thumbnail'] ? asset('media/'.$data['thumbnail']) : asset('frontend/images/breadcrumb_bg.jpg') }});">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">

@@ -11,7 +11,7 @@
 	<meta property="og:description" content="{{ $data->og_description }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ url()->current() }}" />
-	<meta property="og:image" content="{{ $data->og_image ? asset('public/media/'.$data->og_image) : asset('public/media/'.$data->thumbnail) }}" />
+	<meta property="og:image" content="{{ $data->og_image ? asset('media/'.$data->og_image) : asset('media/'.$data->thumbnail) }}" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($gtext['fb_publish'] == 1)
@@ -25,7 +25,7 @@
 	<meta name="twitter:url" content="{{ url()->current() }}">
 	<meta name="twitter:title" content="{{ $data->og_title ? $data->og_title : $data->title }}">
 	<meta name="twitter:description" content="{{ $data->og_description }}">
-	<meta name="twitter:image" content="{{ $data->og_image ? asset('public/media/'.$data->og_image) : asset('public/media/'.$data->thumbnail) }}">
+	<meta name="twitter:image" content="{{ $data->og_image ? asset('media/'.$data->og_image) : asset('media/'.$data->thumbnail) }}">
 @endsection
 
 @section('header')
@@ -35,7 +35,7 @@
 @section('content')
 <main class="main">
 	<!-- Page Breadcrumb -->
-	<section class="breadcrumb-section" style="background-image:  url({{ $data->thumbnail ? asset('public/media/'.$data->thumbnail) : asset('public/frontend/images/breadcrumb_bg.jpg') }});">
+	<section class="breadcrumb-section" style="background-image:  url({{ $data->thumbnail ? asset('media/'.$data->thumbnail) : asset('frontend/images/breadcrumb_bg.jpg') }});">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -61,7 +61,7 @@
 				<div class="col-12 col-md-12 col-lg-8">
 					<div class="blog-details-card">
 						<div class="blog-img">
-							<img src="{{ asset('public/media/'.$data->thumbnail) }}" alt="{{ $data->title }}" />
+							<img src="{{ asset('media/'.$data->thumbnail) }}" alt="{{ $data->title }}" />
 						</div>
 						<div class="blog-content">
 							<div class="blog-meta-card">
@@ -115,7 +115,7 @@
 								<div class="latest_blog_card">
 									<div class="blog_img">
 										<a href="{{ route('frontend.article', [$row->id, $row->slug]) }}">
-											<img src="{{ asset('public/media/'.$row->thumbnail) }}" alt="{{ $row->title }}">
+											<img src="{{ asset('media/'.$row->thumbnail) }}" alt="{{ $row->title }}">
 										</a>
 									</div>
 									<div class="blog_content">
